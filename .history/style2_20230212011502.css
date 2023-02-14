@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+body {
+    font-family: Montserrat, sans-serif;
+    margin: auto;
+}
+
+
+.logo {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+  }
+  
+  nav .logo {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  
+  }
+  
+  nav ul li {
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  nav .icon_navbar {
+    display: flex;
+  }
+  
+ 
+  
+  nav .menu-btn i {
+    color: #050505;
+    font-size: 22px;
+    cursor: pointer;
+  
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  @media (max-width: 1000px) {
+    nav {
+      padding: 0 40px 0 50px;
+    }
+  
+    nav .logo {
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+  
+  @media (max-width: 1250px) {
+    nav .menu-btn i {
+      display: block;
+    }
+  
+    #click:checked~.menu-btn i:before {
+      content: "\f00d";
+    }
+  
+    nav ul {
+      position: fixed;
+      top: 80px;
+      right: -100%;
+      background: #C81100;
+      height: 100vh;
+      width: 60%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+  
+    #click:checked~ul {
+      right: 0;
+    }
+  
+    nav ul li {
+      width: 100%;
+      margin: 40px 0;
+    }
+  
+    nav ul li a {
+      width: 100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  
+    #click:checked~ul li a {
+      margin-left: 0px;
+    }
+  
+    nav ul li a.active,
+    nav ul li a:hover {
+      background: none;
+      color: #1E1E1E;
+    }
+  }
+.title {
+  background-image: url(image/Rectangle\ 48.png);
+  height: 619px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+ 
+ 
+}
+
+.texte{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 50%;
+}
+
+
+
+/*food_app*/
+.title_food_app {
+    padding-top: 50px;
+}
+
+.food_app{
+    background-image: url(./img/food_app.png);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title_food_app h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+    padding-top: 50px;
+}
+
+.title_food_app{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.title_pizza {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+/*food_app*/
+
+
+/*infos*/
+
+
+.ingredient_quantite{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    gap: 20%;
+    margin-bottom: 10px;
+}
+
+
+main {
+    color: #333333;
+}
+
+.label1 input {
+    width: 280px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+
+.infos h1 {
+    padding: 85px;
+}
+
+hr {
+    height: 3px;
+    background-color:#d8d8d8;
+    border: none;
+    margin: 25px 250px 25px;
+}
+
+.nom_prenom {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 400px;
+    padding-bottom: 28px;
+}
+.telephone_email {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 400px;
+    padding-bottom: 28px;
+}
+
+/*infos*/
+
+/*livraison*/
+
+.livraison h1 {
+    margin-left: 65px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+/*livraison*/
+
+/*commande*/
+.suppléments {
+    width: 280px;
+    height: 48px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+    background-color: #FFFFFF;
+}
+
+
+.commande {
+    margin-left: 65px;
+}
+
+.commande h1 {
+    padding-top: 30px;
+}
+
+.commande h3 {
+    padding-top: 50px;
+    padding-bottom: 42px;
+}
+
+.box input {
+    width: 280px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.boissons_dessert {
+    display: flex;
+    flex-direction: row;
+}
+
+/*commande*/
+
+
+.div_button {
+    padding: 50px 150px 70px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    border: 0;
+    line-height: 2.5;
+    width: 120px;
+    padding: 0 18px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #FA4A0C;
+    box-shadow: 1px 1px 5px #B73227;
+}
+
+
+/*dessert et boissons*/
+
+.avec, .sans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+}
+
+.sans_f {
+    padding-top: 39px;
+    padding-left: 50px;
+}
+.avec_f {
+    padding-left: 10px;
+}
+
+.boissons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 31rem;
+    padding-top: 5px;
+}
+
+.carre {
+    width: 24px;
+    height: 24px;
+    background-color: green;
+}
+
+.carre.grey {
+    background-color: #C4C4C4;
+}
+
+.all {
+    display: flex;
+}
+
+.content_of_dessert {
+    margin-left: 186px;
+}
+
+.Fromage {
+    padding: 7px;
+    border-radius: 5px;
+    width: 280px;
+    height: 48px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+    background-color: #FFFFFF;
+}
+/*dessert et boissons*/
+
+
+/*checkbox*/
+.check2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container {
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+
+
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: rgba(176, 176, 176, 0.677);
+    border-radius: 50%;
+}
+
+
+
+
+  .container input:checked  .checkmark {
+    background-color: #2e3983;
+  }
+
+  .checkmark:after {
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      background: white;
+  }
+/*checkbox*/
+
+@media (max-width:800px) {
+.infos h1{
+    text-align: center;
+}
+.nom_prenom {
+    justify-content: center;
+   flex-direction: column;
+   padding-left: 50px;
+}
+.telephone_email {
+   flex-direction: column;
+   padding-left: 50px;
+}
+
+.ingredient_quantite{
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    padding-right: 150px;
+
+}
+
+.all{
+    fle
+}
+}

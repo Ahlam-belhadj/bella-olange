@@ -5,22 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Bella olanje</title>
 </head>
 
 <body>
     <header>
-        <nav class="container">
-            <img class="logo" src="image/logo_bella_olonje.png" alt="logo">
-            <ul class="nav-menu">
+     
+    <nav>
+        <ul class="nav-bar">
+            <div class="logo"><a href='#'><img src="image/logo_bella_olonje.png" alt="jsp"></a></div>
+            <input type="checkbox" id="check" />
+            <span class="menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="#pizza" class="nav-link">Pizza</a></li>
-                <li><a href="#burgers" class="nav-link">Burgers</a></li>
-                <li><a href="#salade" class="nav-link">Salade</a></li>
+                <li><a href="#pizza" class="nav-link">Pizzas</a></li>
+                <li><a href="#burger" class="nav-link">Burgers</a></li>
+                <li><a href="#salades" class="nav-link">Salades</a></li>
                 <li><a href="index3.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+  
 
         <div class="title">
             <div class="texte">
@@ -33,58 +41,84 @@
     <main>
         <h2 id="pizza" >Nos Pizza</h2>
         <div class="container-card">
-            <div class="border">
-                <div class="card-img">
-                    <img src="image/fromage.png" alt="">
-                </div>
-                <div class="card-text">
-                    <p>
-                        Pizza 4 Fromage
-                    </p>
-                </div>
-                <div class="prix">
-                    <p>
-                        12$
-                    </p>
-                </div>
-                <div class="button1">
-                    <a href="index2.html"><button class="button" type="button">Buy</button></a>
-                </div>
-            </div>
-            <div class="border">
-                <div class="card-img">
-                    <img src="image/fromage.png" alt="">
-                </div>
-                <div class="card-text">
-                    <p>
-                        Pizza 4 Fromage
-                    </p>
-                </div>
-                <div class="prix">
-                    <p>
-                        12$
-                    </p>
-                </div>
-                <div class="button1">
-                    <a href="index2.html"><button class="button" type="button">Buy</button></a>
+            <div class="b-wrap">
+                <div class="border">
+                    <div class="card-img">
+                        <img class="pimg" src="image/fromage.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            Pizza 4 Fromage
+                        </p>
+                    </div>
+                    <div class="prix">
+                        <p>
+                            12$
+                        </p>
+                    </div>
+                    <div class="button1">
+                        <a href="index2.html"><button class="button" type="button">Buy</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="border">
-                <div class="card-img">
-                    <img src="image/fromage.png" alt="">
+            <div class="b-wrap">
+                <div class="border">
+                    <div class="card-img">
+                        <img class="pimg" src="image/fromage.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            Pizza 4 Fromage
+                        </p>
+                    </div>
+                    <div class="prix">
+                        <p>
+                            12$
+                        </p>
+                    </div>
+                    <div class="button1">
+                        <a href="index2.html"><button class="button" type="button">Buy</button></a>
+                    </div>
                 </div>
-                <div class="card-text">
-                    <p>
-                        Pizza 4 Fromage
-                    </p>
+            </div>
+            <div class="b-wrap">
+                <div class="border">
+                    <div class="card-img">
+                        <img class="pimg" src="image/fromage.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            Pizza 4 Fromage
+                        </p>
+                    </div>
+                    <div class="prix">
+                        <p>
+                            12$
+                        </p>
+                    </div>
+                    <div class="button1">
+                        <a href="index2.html"><button class="button" type="button">Buy</button></a>
+                    </div>
                 </div>
-                <div class="prix">
-                    <p>
-                        12$
-                    </p>
-                </div>
-                <div class="button1">
-                    <a href="index2.html"><button class="button" type="button">Buy</button></a>
+            </div>
+            <div class="b-wrap">
+                <div class="border">
+                    <div class="card-img">
+                        <img class="pimg" src="image/fromage.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <p>
+                            Pizza 4 Fromage
+                        </p>
+                    </div>
+                    <div class="prix">
+                        <p>
+                            12$
+                        </p>
+                    </div>
+                    <div class="button1">
+                        <a href="index2.html"><button class="button" type="button">Buy</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,7 +127,7 @@
         <div class="container-card">
             <div class="border">
                 <div class="card-img">
-                    <img src="image/salade.png" alt="">
+                    <img class="pimg" src="image/salade.png" alt="">
                 </div>
                 <div class="card-text">
                     <p>
@@ -111,7 +145,7 @@
             </div>
             <div class="border">
                 <div class="card-img">
-                    <img src="image/salade.png" alt="">
+                    <img class="pimg"  src="image/salade.png" alt="">
                 </div>
                 <div class="card-text">
                     <p>
@@ -129,7 +163,25 @@
             </div>
             <div class="border">
                 <div class="card-img">
-                    <img src="image/salade.png" alt="">
+                    <img class="pimg" src="image/salade.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>
+                        Burger d'avocat
+                    </p>
+                </div>
+                <div class="prix">
+                    <p>
+                        12$
+                    </p>
+                </div>
+                <div class="button1">
+                    <a href="index2.html"><button class="button" type="button">Buy</button></a>
+                </div>
+            </div>
+            <div class="border">
+                <div class="card-img">
+                    <img class="pimg" src="image/salade.png" alt="">
                 </div>
                 <div class="card-text">
                     <p>
@@ -151,7 +203,7 @@
         <div class="container-card">
             <div class="border">
                 <div class="card-img">
-                    <img src="image/burger.png" alt="">
+                    <img class="pimg" src="image/burger.png" alt="">
                 </div>
                 <div class="card-text">
                     <p>
@@ -169,7 +221,7 @@
             </div>
             <div class="border">
                 <div class="card-img">
-                    <img src="image/burger.png" alt="">
+                    <img class="pimg" src="image/burger.png" alt="">
                 </div>
                 <div class="card-text">
                     <p>
@@ -187,7 +239,25 @@
             </div>
             <div class="border">
                 <div class="card-img">
-                    <img src="image/burger.png" alt="">
+                    <img class="pimg" src="image/burger.png" alt="">
+                </div>
+                <div class="card-text">
+                    <p>
+                        Burger d'avocat
+                    </p>
+                </div>
+                <div class="prix">
+                    <p>
+                        12$
+                    </p>
+                </div>
+                <div class="button1">
+                    <a href="index2.html"><button class="button" type="button">Buy</button></a>
+                </div>
+            </div>
+            <div class="border">
+                <div class="card-img">
+                    <img class="pimg" src="image/burger.png" alt="">
                 </div>
                 <div class="card-text">
                     <p>
@@ -227,7 +297,7 @@
         <footer class="footer">
             <img class="footer_logo" src="image/logo_bella_olonje.png" alt="logo">
             <div class="social">
-                <img src="image/ant-design_twitter-outlined.png" alt="twitter">
+                <img src="image/ant-design_twitter-outlined.png" alt="panier">
                 <img src="image/ant-design_facebook-filled.png" alt="facebook">
                 <img src="image/instagram.png" alt="insta">
             </div>

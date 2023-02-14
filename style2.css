@@ -6,48 +6,125 @@ body {
 }
 
 
-.logo {
-    height: 80px;
-    padding-left: 80px;
+.logo img{
+  height: 100px;
+  width: 150px;
 }
 
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: #FFF;
+  padding: 12px 20px;
 }
 
-header ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.menu {
+  display: flex;
 }
 
-header ul li {
-    font-size: 16px;
-    margin-left: 2rem;
-    list-style: none;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    margin-left: 8rem;
-
+.menu li {
+  padding-left: 20px;
+  padding-right: 55px;
 }
 
-header ul li a {
-    color: rgb(17, 17, 17);
-    text-decoration: none;
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  position: relative;
 }
 
-
-.nav-menu {
-    padding-left: 15px;
+.menu li a:hover {
+  color: #FA4A0C;
 }
 
+.open-menu {
+  position: absolute;
+  color: #FA4A0C;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.close-menu {
+  position: absolute;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+  padding: 10px;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
+}
+
+@media(max-width: 920px) {
+  .menu {
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 100;
+      background-color: rgb(255, 88, 70);
+      transition: all 0.2s ease-in-out;
+      padding-top: 100px;
+  }
+
+  .menu li {
+      margin-top: 40px;
+  }
+
+  .menu li a {
+      padding: 10px;
+      color: #FFF;
+  }
+
+  .open-menu {
+      display: block;
+      padding-right: 25px;
+      padding-top: 13px;
+  }
+
+  .close-menu {
+      display: block;
+      color: #FFF;
+      padding-right: 25px;
+      padding-top: 22px;
+  }
+
+  #check:checked~.menu {
+      right: 0;
+  }
+
+  .menu li a:hover {
+      color: #333;
+  }
+
+  .nav-link {
+      font-family: Montserrat;
+      letter-spacing: .8px;
+  }
+}
 .title {
   background-image: url(image/Rectangle\ 48.png);
   height: 619px;
@@ -71,49 +148,6 @@ header ul li a {
 
 
 
-/*food_app*/
-.title_food_app {
-    padding-top: 50px;
-}
-
-.food_app{
-    background-image: url(./img/food_app.png);
-    min-height: 90vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.title_food_app h3 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 550;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    letter-spacing: 0.1px;
-    color: #F7F7F7;
-    padding-top: 50px;
-}
-
-.title_food_app{
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 58px;
-    line-height: 80px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #FFFFFF;
-}
-
-.title_pizza {
-    display: flex;
-    justify-content: center;
-    color: #000000;
-}
-/*food_app*/
-
 
 /*infos*/
 
@@ -122,17 +156,13 @@ header ul li a {
     display: flex;
     flex-direction:row;
     justify-content: flex-start;
-    gap: 20%;
+    gap: 10%; 
     margin-bottom: 10px;
 }
 
 
-main {
-    color: #333333;
-}
-
 .label1 input {
-    width: 280px;
+    width: 250px;
     height: 35px;
     margin-bottom: 20px;
     margin-top: 8px;
@@ -157,13 +187,13 @@ hr {
 .nom_prenom {
     display: flex;
     justify-content: space-around;
-    padding-right: 400px;
+    padding-right: 0px;
     padding-bottom: 28px;
 }
 .telephone_email {
     display: flex;
     justify-content: space-around;
-    padding-right: 400px;
+    padding-right: 0px;
     padding-bottom: 28px;
 }
 
@@ -193,7 +223,7 @@ hr {
 
 
 .commande {
-    margin-left: 65px;
+    margin-left: 250px;
 }
 
 .commande h1 {
@@ -206,7 +236,7 @@ hr {
 }
 
 .box input {
-    width: 280px;
+    width: 250px;
     height: 35px;
     margin-bottom: 20px;
     margin-top: 15px;
@@ -263,11 +293,15 @@ button {
     padding-left: 10px;
 }
 
+
+
+
+
 .boissons{
-    display: flex;
+     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 31rem;
+    justify-content: space-around; 
+    /* width: 31rem; */
     padding-top: 5px;
 }
 
@@ -311,10 +345,11 @@ button {
     padding-bottom: 40px;
 }
 .container {
-    padding-left: 35px;
+    padding-left: 30px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 16px;
+
 
   }
 
@@ -335,8 +370,10 @@ button {
 }
 
 
-  .container input:checked ~ .checkmark {
-    background-color: #3751FF;
+
+
+  .container input:checked  .checkmark {
+    background-color: #2e3983;
   }
 
   .checkmark:after {
@@ -355,3 +392,121 @@ button {
       background: white;
   }
 /*checkbox*/
+
+@media (max-width:650px) {
+  .nom_prenom {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15%;
+  }
+
+  .telephone_email {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15%;
+  }
+  
+  .ingredient_quantite{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .all{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content_of_dessert{
+    margin-left: 0px;
+  }
+
+  .Fromage{
+    width: 200px;
+  }
+
+  .commande {
+    margin-left: 60px;
+}
+
+
+h2{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+.livraison h1 {
+  margin-left: 5px;
+}
+
+
+}
+
+@media screen and (min-width:651px) and (max-width:1199px) {
+  .nom_prenom {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+}
+
+.telephone_email {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+}
+
+.ingredient_quantite{
+  display: flex;
+  flex-direction: column;
+}
+
+.all{
+  display: flex;
+  flex-direction: column;
+}
+
+.content_of_dessert{
+  margin-left: 0px;
+}
+
+.Fromage{
+  
+  width: 247px;
+text-align: center;
+}
+  
+
+h2{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+
+.label1 input {
+  width: 550px;
+
+}
+
+.suppléments {
+  width: 550px;
+}
+
+
+.box input {
+  width: 520px;
+}
+
+.commande {
+  margin-left: 150px;
+}
+.content_of_boisson {
+  padding-right: 550px;
+}
+
+.content_of_dessert {
+  padding-right: 550px;
+}
+}

@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+main {
+    overflow-x: hidden;
+  }
+
+
+.logo img{
+    height: 150px;
+    width: 100px;
+}
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: #FFF;
+    padding: 12px 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+    padding-right: 55px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.menu li a:hover {
+    color: #FA4A0C;
+}
+
+.open-menu {
+    position: absolute;
+    color: #FA4A0C;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.close-menu {
+    position: absolute;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    padding: 10px;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width: 920px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(255, 88, 70);
+        transition: all 0.2s ease-in-out;
+        padding-top: 100px;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+        color: #FFF;
+    }
+
+    .open-menu {
+        display: block;
+        padding-right: 25px;
+        padding-top: 13px;
+    }
+
+    .close-menu {
+        display: block;
+        color: #FFF;
+        padding-right: 25px;
+        padding-top: 22px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    .menu li a:hover {
+        color: #333;
+    }
+
+    .nav-link {
+        font-family: Montserrat;
+        letter-spacing: .8px;
+    }
+}
+
+
+
+.title {
+    background-image: url(image/Rectangle\ 48.png);
+    height: 619px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+
+}
+
+.texte {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 50%;
+}
+
+/* header */
+
+h1 {
+    padding-left: 100px;
+}
+
+
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.info1 {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 100px;
+}
+
+.info2 {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 100px;
+}
+
+input {
+    width: 320px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+
+}
+
+
+.maps {
+    display: flex;
+
+    padding-left: 200px;
+}
+
+iframe {
+    width: 941px;
+    height: 500px;
+    left: 100px;
+    top: 1875px;
+
+}
+
+
+/* button */
+button {
+    border: 0;
+    line-height: 2.5;
+    width: 120px;
+    padding: 0 18px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #FA4A0C;
+    box-shadow: 1px 1px 5px #B73227;
+
+
+}
+
+.button1 {
+    display: flex;
+    justify-content: end;
+    margin: 50px 0px 35px 100px;
+    border-radius: 8px;
+}
+
+p {
+    margin-top: 63px;
+    margin-left: 50px;
+}
+
+.btn {
+    display: flex;
+}
+
+
+.div_button {
+    padding: 50px 0px 35px 100px;
+    display: flex;
+}
+
+/* button */
+
+
+.chose {
+    display: flex;
+}
+
+.grp_choose {
+    padding-left: 200px;
+}
+
+.label_choose input {
+    width: 938px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.label_message {
+    padding-top: 25px;
+}
+
+textarea {
+    width: 938px;
+    height: 141px;
+    margin-bottom: 20px;
+    color: grey;
+    border-color: gray;
+    margin-top: 12px;
+    padding: 10px 10px 80px;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.g-recaptcha {
+    padding-left: 200px;
+    margin-bottom: 60px;
+}
+
+@media (max-width:650px) {
+    .info1 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15%;
+    }
+
+    .info2 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15%;
+    }
+
+    .chose {
+
+        padding-left: 20%;
+    }
+
+    .div_button {
+        padding: 0px;
+    }
+
+    .g-recaptcha {
+        margin-top: 40px;
+        padding-left: 10%;
+    }
+
+    .grp_choose {
+        /* padding-left: 0px; */
+        padding-left: 15%;
+    }
+
+    .label_choose input {
+        width: 300px;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+    .maps {
+        padding-left: 0px;
+    }
+
+    iframe {
+        width: 400px;
+        height: 200px;
+        top: 1875px;
+        padding-left: 10%;
+
+    }
+
+    .button1 {
+
+        justify-content: center;
+        margin: 50px 0px 0px 0px;
+
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:1199px) {
+    .information {
+        display: flex;
+        justify-content: center;
+    }
+
+    .info1 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20%;
+    }
+
+    .info2 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20%;
+    }
+
+    .chose {
+
+        padding-left: 35%;
+    }
+
+    .div_button {
+        padding: 0px;
+    }
+
+    .g-recaptcha {
+        margin-top: 40px;
+        padding-left: 30%;
+    }
+
+    .grp_choose {
+
+        display: flex;
+        justify-content: center;
+
+        padding-left: 20%;
+    }
+
+    .label_choose input {
+
+        width: 550px;
+
+    }
+
+    textarea {
+        width: 550px;
+    }
+
+    .maps {
+        padding-left: 180px;
+    }
+
+    iframe {
+        width: 700px;
+        height: 400px;
+        top: 1875px;
+
+
+    }
+
+    .button1 {
+
+        justify-content: center;
+        margin: 50px 0px 0px 0px;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input {
+        width: 550px;
+    }
+
+
+}
